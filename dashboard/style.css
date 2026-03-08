@@ -3,3 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template: 1fr 5fr / 1fr 5fr;
+  border: 3px solid red;
+}
+
+.container > div {
+  border: 3px solid blue;
+}
+
+.sidebar {
+  background-color: #00CCFF;
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.header {
+  background-color: orange;
+}
+
+.content {
+  background-color: grey;
+}
